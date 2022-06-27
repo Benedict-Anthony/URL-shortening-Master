@@ -1,0 +1,126 @@
+.urls-lists{
+    background-color: var(--Gray);
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(-80px);
+}
+.form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+    padding:2rem 3rem;
+    background:url("../images/bg-boost-desktop.svg") no-repeat center/cover;
+    background-color: var(--DarkViolet);
+    border-radius: 10px;
+}
+
+.form .input-bar{
+    width: 80%;
+    position: relative;
+    margin-top: 30px;
+}
+
+form .input-bar p{
+     text-align: left;
+     color: var(--Red);
+     font-style: italic;
+     margin-top: 6px;
+     margin-left: 6px;
+ }
+.form .input-bar input{
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    padding: .8rem .4rem;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
+
+.form .input-bar input:focus{
+    outline-color: red;
+    border: 1px solid red;
+}
+
+.urls-list-items{
+    width: 100%;
+}
+
+.urls__item .lg-url{
+    font-size: 14px;
+}
+
+.urls__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: .5rem;
+    width: 100%;
+}
+
+.sht-url{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    gap: 1rem;
+}
+
+
+.sht-url span{
+    color: var(--Cyan);
+}
+
+
+
+@media(max-width:768px) {
+     .form {
+        flex-direction: column;
+        padding:1rem 0;
+    }
+    .urls__item,
+    .sht-url{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sht-url{
+        padding-top: 1rem;
+    }
+
+    .sht-url::before {
+        content: '';
+        top: 10px;
+        width: 90%;
+        height: 1px;
+        background-color: var(--Gray);
+        position: absolute;
+
+    }
+    .form-btn,
+    .url-btn{
+        width: 90%;
+    }
+
+        .urls__item .lg-url {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 10px;
+        }
+}

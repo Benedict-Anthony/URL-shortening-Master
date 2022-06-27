@@ -1,0 +1,22 @@
+/* BUTTON COMPONENTS */
+
+.btn {
+    border: 0;
+    padding: .8rem 2rem;
+    background-color:var(--Cyan);
+    font-size:18px;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: .6;
+}
+
+@media(max-width:768px) {
+    .btn.btn-full{
+        /* display: inline-block; */
+        width: 100% ;      
+    }
+}

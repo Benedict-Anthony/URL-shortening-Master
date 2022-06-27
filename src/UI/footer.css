@@ -1,0 +1,62 @@
+footer{
+    background-color: var(--VeryDarkViolet);
+    color: #fff;
+}
+
+.footer__intro{
+    padding: 2rem;
+    background: url("../images/bg-boost-desktop.svg") no-repeat center/cover;
+    background-color: var(--VeryDarkViolet);
+
+}
+
+.footer__infos{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    color: #fff;
+}
+
+.footer__infos h4{
+    margin-bottom: 20px;
+}
+
+.footer__infos li{
+    margin-bottom: 16px;
+}
+
+.footer__infos a{
+    color: #fff;
+    margin: 10px 0;
+}
+
+.footer__infos a:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.footer__infos .social__links .icon{
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+.footer__infos .social__links .icon:hover{
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+@media(max-width:768px) {
+    .footer__infos {
+     flex-direction: column;
+     text-align: center;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+ }
+ .footer__infos .social__links .icon, footer ul{
+     margin-top: 20px;
+ }
+ footer ul h1{
+     font-size: 1.5rem;
+ }
+}
